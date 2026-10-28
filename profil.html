@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil Calon Guru - Achmad Miftachul Firdaus (NIM 25316173727). E-Portofolio PPL Mandiri di SD Laboratorium UM, Universitas Negeri Malang.">
+  <title>Profil Calon Guru | E-PORTOFOLIO PPL MANDIRI DI SD LABORATORIUM UM</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Identity Bar -->
+  <aside class="header-topbar" aria-label="Informasi Pemilik Portofolio">
+    <div class="container topbar-content">
+      <div class="topbar-identity">
+        <span class="topbar-identity-item">Nama: <strong>Achmad Miftachul Firdaus</strong></span>
+        <span class="topbar-identity-item">NIM: <strong>25316173727</strong></span>
+        <span class="topbar-identity-item">LPTK: <strong>Universitas Negeri Malang</strong></span>
+      </div>
+      <div class="topbar-identity">
+        <span>Sekolah Praktik: <strong>SD Laboratorium UM</strong></span>
+        <span class="topbar-badge">PPL Mandiri PPG</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-main">
+      <a href="index.html" class="brand-container" aria-label="Kembali ke Beranda">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">E-PORTOFOLIO PPL MANDIRI</span>
+          <span class="brand-subtitle">SD LABORATORIUM UM • PPG UNIVERSITAS NEGERI MALANG</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" aria-label="Navigasi Utama">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Beranda</a>
+        </div>
+        <div class="nav-item">
+          <a href="profil.html" class="nav-link active">Profil</a>
+        </div>
+        <div class="nav-item">
+          <a href="index.html#topik-ppl" class="nav-link dropdown-trigger" aria-haspopup="true">Topik PPL (1-8)</a>
+          <div class="dropdown-menu">
+            <a href="topik-1.html" class="dropdown-item"><span class="dropdown-item-num">01</span><span>Orientasi & Manajemen</span></a>
+            <a href="topik-2.html" class="dropdown-item"><span class="dropdown-item-num">02</span><span>Observasi Lingkungan</span></a>
+            <a href="topik-3.html" class="dropdown-item"><span class="dropdown-item-num">03</span><span>Praktik Terbimbing</span></a>
+            <a href="topik-4.html" class="dropdown-item"><span class="dropdown-item-num">04</span><span>Praktik Mandiri Siklus 1</span></a>
+            <a href="topik-5.html" class="dropdown-item"><span class="dropdown-item-num">05</span><span>Praktik Mandiri Siklus 2</span></a>
+            <a href="topik-6.html" class="dropdown-item"><span class="dropdown-item-num">06</span><span>Praktik Mandiri Siklus 3</span></a>
+            <a href="topik-7.html" class="dropdown-item"><span class="dropdown-item-num">07</span><span>Praktik Mandiri Siklus 4</span></a>
+            <a href="topik-8.html" class="dropdown-item"><span class="dropdown-item-num">08</span><span>Kegiatan Non-Mengajar</span></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="refleksi.html" class="nav-link">Refleksi</a>
+        </div>
+        <div class="nav-item">
+          <a href="galeri.html" class="nav-link">Galeri</a>
+        </div>
+      </nav>
+
+      <!-- Search & Mobile Toggle -->
+      <div class="header-actions">
+        <button type="button" class="btn-header-search" onclick="openSearchModal()" aria-label="Buka pencarian dokumen">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <span>Cari Berkas (Ctrl+K)</span>
+        </button>
+        <button type="button" class="mobile-nav-toggle" aria-label="Buka menu navigasi">
+          <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Navigasi Mobile">
+    <div class="drawer-header">
+      <span style="font-weight: 800; color: #FFFFFF; font-size: 1rem;">Navigasi Portofolio</span>
+      <button type="button" class="drawer-close" aria-label="Tutup menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="profil.html" class="mobile-nav-link active">Profil Calon Guru</a></li>
+      <li>
+        <span class="mobile-nav-link" style="color: var(--color-athletic-orange); font-size: 0.85rem; text-transform: uppercase;">Delapan Topik PPL Mandiri</span>
+        <div class="mobile-subnav">
+          <a href="topik-1.html" class="mobile-subnav-link">Topik 1 — Orientasi & Manajemen</a>
+          <a href="topik-2.html" class="mobile-subnav-link">Topik 2 — Observasi Lingkungan</a>
+          <a href="topik-3.html" class="mobile-subnav-link">Topik 3 — Praktik Terbimbing</a>
+          <a href="topik-4.html" class="mobile-subnav-link">Topik 4 — Mandiri Siklus 1</a>
+          <a href="topik-5.html" class="mobile-subnav-link">Topik 5 — Mandiri Siklus 2</a>
+          <a href="topik-6.html" class="mobile-subnav-link">Topik 6 — Mandiri Siklus 3</a>
+          <a href="topik-7.html" class="mobile-subnav-link">Topik 7 — Mandiri Siklus 4</a>
+          <a href="topik-8.html" class="mobile-subnav-link">Topik 8 — Kegiatan Non-Mengajar</a>
+        </div>
+      </li>
+      <li><a href="refleksi.html" class="mobile-nav-link">Refleksi Pembelajaran</a></li>
+      <li><a href="galeri.html" class="mobile-nav-link">Galeri Dokumentasi</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="section section-navy" style="padding: clamp(2.5rem, 5vw, 4rem) 0;">
+      <div class="container">
+        <div class="track-lane-line lane-orange">Profil Pendidik</div>
+        <h1 class="hero-title" style="margin-bottom: 0.5rem;">Profil Calon Guru Profesional</h1>
+        <p class="section-subtitle" style="color: rgba(248, 247, 243, 0.85); max-width: 680px;">
+          Mengenal identitas akademik, filosofi pendidikan jasmani, orientasi PPL Mandiri di SD Laboratorium UM, dan komitmen pengembangan kompetensi berkelanjutan.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: IDENTITAS & LATAR BELAKANG AKADEMIK -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-2" style="gap: 2.5rem; align-items: start;">
+          <!-- Card Identitas Resmi -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-warm-border); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.75rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-warm-border);">
+              <img src="assets/images/avatar-placeholder.svg" alt="Foto Profil Achmad Miftachul Firdaus" style="width: 80px; height: 80px; border-radius: 50%; box-shadow: var(--shadow-sm); flex-shrink: 0;">
+              <div>
+                <h3 style="color: var(--color-midnight-navy); margin-bottom: 0.25rem;">Achmad Miftachul Firdaus</h3>
+                <p class="text-orange" style="font-weight: 700; font-size: 0.92rem; margin-bottom: 0.35rem;">Mahasiswa Pendidikan Profesi Guru (PPG)</p>
+                <span class="badge badge-navy">SD Laboratorium UM</span>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">Nomor Induk Mahasiswa (NIM)</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">25316173727</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">LPTK</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">Universitas Negeri Malang</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">Sekolah Praktik</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">SD Laboratorium UM</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">Program</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">Pendidikan Profesi Guru (PPG)</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">Jenis Kegiatan</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">PPL Mandiri</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">Guru Pamong</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">Anang Marzuqi, S.Pd.</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--color-warm-border);">
+                <span class="text-muted" style="font-size: 0.9rem;">Dosen Pembimbing (DPL)</span>
+                <span style="font-weight: 700; color: var(--color-midnight-navy);">Prof. Yusuf Hanafi, S.Ag, M.Fil.I</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span class="text-muted" style="font-size: 0.9rem;">Bidang Keilmuan</span>
+                <span style="font-weight: 700; color: var(--color-athletic-orange);">Pendidikan Jasmani, Olahraga & Kesehatan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tujuan & Misi PPL Mandiri -->
+          <div>
+            <div class="track-lane-line">Tujuan PPL Mandiri</div>
+            <h3 style="margin-bottom: 1rem; color: var(--color-midnight-navy);">Tujuan Praktik Pengalaman Lapangan di SD Laboratorium UM</h3>
+            <p style="color: var(--color-graphite-light); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1rem;">
+              Praktik Pengalaman Lapangan (PPL) Mandiri di SD Laboratorium Universitas Negeri Malang bertujuan untuk memberikan pengalaman kontekstual dan mendalam bagi calon guru dalam mengelola pembelajaran secara riil di satuan pendidikan dasar.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <div style="width: 28px; height: 28px; border-radius: 50%; background-color: var(--color-orange-subtle); color: var(--color-athletic-orange); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; flex-shrink: 0;">1</div>
+                <p style="font-size: 0.92rem; color: var(--color-graphite); margin: 0;"><strong>Pengalaman Nyata Manajemen Sekolah:</strong> Memahami tata kelola kelembagaan, sistem supervisi, dan iklim akademik SD Laboratorium UM.</p>
+              </div>
+              <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <div style="width: 28px; height: 28px; border-radius: 50%; background-color: var(--color-orange-subtle); color: var(--color-athletic-orange); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; flex-shrink: 0;">2</div>
+                <p style="font-size: 0.92rem; color: var(--color-graphite); margin: 0;"><strong>Penguasaan Siklus Pembelajaran:</strong> Melaksanakan praktik mengajar terbimbing dan empat siklus mandiri dengan diferensiasi gerak dan asesmen autentik.</p>
+              </div>
+              <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <div style="width: 28px; height: 28px; border-radius: 50%; background-color: var(--color-orange-subtle); color: var(--color-athletic-orange); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; flex-shrink: 0;">3</div>
+                <p style="font-size: 0.92rem; color: var(--color-graphite); margin: 0;"><strong>Refleksi & Continuous Improvement:</strong> Menganalisis kelebihan serta tantangan setiap siklus untuk menyempurnakan strategi pedagogis secara berkelanjutan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FILOSOFI MENGAJAR (SPORTS EDUCATION) -->
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-header">
+          <div class="track-lane-line lane-orange">Filosofi Mengajar</div>
+          <h2 class="section-title">“Growing Through Practice, Teaching with Purpose.”</h2>
+          <p class="section-subtitle">
+            Konsep visual dan filosofi Sports Education: Aktif, Kreatif, dan Reflektif dalam membimbing tumbuh kembang peserta didik sekolah dasar.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.75rem; border: 1px solid var(--color-warm-border); box-shadow: var(--shadow-sm); border-top: 4px solid var(--color-athletic-orange);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-athletic-orange); font-weight: 800;">01 • Active (Aktif)</div>
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">Keterlibatan Total Siswa</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6;">
+              Menempatkan peserta didik sebagai pusat pembelajaran. Setiap anak diberikan kesempatan bergerak secara optimal, bereksplorasi secara motorik, dan berpartisipasi tanpa rasa takut salah.
+            </p>
+          </div>
+
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.75rem; border: 1px solid var(--color-warm-border); box-shadow: var(--shadow-sm); border-top: 4px solid var(--color-soft-green);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-soft-green); font-weight: 800;">02 • Creative (Kreatif)</div>
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">Modifikasi & Variasi Permainan</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6;">
+              Merancang modul dan skenario permainan edukatif yang inovatif. Menyesuaikan alat, ruang, dan peraturan permainan agar ramah anak dan menumbuhkan daya imajinasi serta taktik berpikir.
+            </p>
+          </div>
+
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.75rem; border: 1px solid var(--color-warm-border); box-shadow: var(--shadow-sm); border-top: 4px solid var(--color-midnight-navy);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-midnight-navy); font-weight: 800;">03 • Reflective (Reflektif)</div>
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">Evaluasi Berkelanjutan</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6;">
+              Setiap pertemuan diakhiri dengan pendinginan, ulasan makna, dan asesmen reflektif. Calon guru secara berkala menganalisis efektivitas pengajaran demi perbaikan pada siklus selanjutnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TARGET PENGEMBANGAN 4 KOMPETENSI GURU -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="track-lane-line">Standar Kompetensi Guru</div>
+          <h2 class="section-title">Target Pengembangan Kompetensi PPG</h2>
+          <p class="section-subtitle">
+            Capaian empat pilar kompetensi pendidik profesional yang dibina dan diuji selama masa PPL Mandiri di SD Laboratorium UM.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <!-- Pedagogik -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-warm-border); border-radius: var(--radius-md); padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-orange">Kompetensi 1</span>
+              <h4 style="color: var(--color-midnight-navy); margin: 0;">Kompetensi Pedagogik</h4>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Mampu memahami karakteristik peserta didik sekolah dasar secara mendalam, merancang modul ajar berdiferensiasi, memilih model pembelajaran kooperatif, dan mengelola kelas outdoor dengan aman dan kondusif.
+            </p>
+          </div>
+
+          <!-- Kepribadian -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-warm-border); border-radius: var(--radius-md); padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-green">Kompetensi 2</span>
+              <h4 style="color: var(--color-midnight-navy); margin: 0;">Kompetensi Kepribadian</h4>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Menampilkan kepribadian yang mantap, stabil, berakhlak mulia, berwibawa, dan menjunjung sportivitas tinggi sehingga menjadi teladan nyata bagi siswa di lingkungan sekolah dasar.
+            </p>
+          </div>
+
+          <!-- Sosial -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-warm-border); border-radius: var(--radius-md); padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-navy">Kompetensi 3</span>
+              <h4 style="color: var(--color-midnight-navy); margin: 0;">Kompetensi Sosial</h4>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Mampu berkomunikasi secara efektif, empatik, dan santun dengan peserta didik, guru pamong, sesama mahasiswa PPG, pimpinan sekolah, serta orang tua/wali murid SD Laboratorium UM.
+            </p>
+          </div>
+
+          <!-- Profesional -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-warm-border); border-radius: var(--radius-md); padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-orange">Kompetensi 4</span>
+              <h4 style="color: var(--color-midnight-navy); margin: 0;">Kompetensi Profesional</h4>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Menguasai materi keilmuan pendidikan jasmani dan gerak dasar secara luas dan mendalam, memahami perkembangan kurikulum mutakhir, serta mampu mengintegrasikan teknologi digital dalam asesmen dan evaluasi pembelajaran.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>E-PORTOFOLIO PPL MANDIRI DI SD LABORATORIUM UM</h4>
+          <p class="footer-tagline">“Growing Through Practice, Teaching with Purpose.”</p>
+          <p class="footer-desc">
+            Portofolio digital resmi mahasiswa Program Pendidikan Profesi Guru (PPG) Universitas Negeri Malang dalam pelaksanaan Praktik Pengalaman Lapangan (PPL) Mandiri di SD Laboratorium UM.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Identitas Pemilik</h5>
+          <ul class="footer-links">
+            <li><strong>Nama:</strong> Achmad Miftachul Firdaus</li>
+            <li><strong>NIM:</strong> 25316173727</li>
+            <li><strong>LPTK:</strong> Universitas Negeri Malang</li>
+            <li><strong>Sekolah Praktik:</strong> SD Laboratorium UM</li>
+            <li><strong>Program:</strong> PPG Calon Guru</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigasi Utama</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Calon Guru</a></li>
+            <li><a href="refleksi.html">Refleksi Pembelajaran</a></li>
+            <li><a href="galeri.html">Galeri Dokumentasi</a></li>
+            <li><a href="topik-1.html">Topik 1 — Manajemen Sekolah</a></li>
+            <li><a href="topik-4.html">Topik 4 — Praktik Mandiri Siklus 1</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 E-Portofolio PPL Mandiri SD Laboratorium UM. Seluruh Hak Cipta Dilindungi.
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <span>Universitas Negeri Malang</span>
+          <span>•</span>
+          <span>SD Laboratorium UM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" id="backToTopBtn" class="back-to-top" aria-label="Kembali ke atas">
+    <svg style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/gdrive-viewer.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/filter-search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Topik 3: Praktik Pembelajaran Terbimbing - E-Portofolio PPL Mandiri di SD Laboratorium UM oleh Achmad Miftachul Firdaus (NIM 25316173727).">
+  <title>Topik 3 — Praktik Pembelajaran Terbimbing | E-PORTOFOLIO PPL MANDIRI</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Identity Bar -->
+  <aside class="header-topbar" aria-label="Informasi Pemilik Portofolio">
+    <div class="container topbar-content">
+      <div class="topbar-identity">
+        <span class="topbar-identity-item">Nama: <strong>Achmad Miftachul Firdaus</strong></span>
+        <span class="topbar-identity-item">NIM: <strong>25316173727</strong></span>
+        <span class="topbar-identity-item">LPTK: <strong>Universitas Negeri Malang</strong></span>
+      </div>
+      <div class="topbar-identity">
+        <span>Sekolah Praktik: <strong>SD Laboratorium UM</strong></span>
+        <span class="topbar-badge">PPL Mandiri PPG</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-main">
+      <a href="index.html" class="brand-container">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">E-PORTOFOLIO PPL MANDIRI</span>
+          <span class="brand-subtitle">SD LABORATORIUM UM • PPG UNIVERSITAS NEGERI MALANG</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navigasi Utama">
+        <div class="nav-item"><a href="index.html" class="nav-link">Beranda</a></div>
+        <div class="nav-item"><a href="profil.html" class="nav-link">Profil</a></div>
+        <div class="nav-item">
+          <a href="index.html#topik-ppl" class="nav-link dropdown-trigger active" aria-haspopup="true">Topik PPL (1-8)</a>
+          <div class="dropdown-menu">
+            <a href="topik-1.html" class="dropdown-item"><span class="dropdown-item-num">01</span><span>Orientasi & Manajemen</span></a>
+            <a href="topik-2.html" class="dropdown-item"><span class="dropdown-item-num">02</span><span>Observasi Lingkungan</span></a>
+            <a href="topik-3.html" class="dropdown-item active"><span class="dropdown-item-num">03</span><span>Praktik Terbimbing</span></a>
+            <a href="topik-4.html" class="dropdown-item"><span class="dropdown-item-num">04</span><span>Praktik Mandiri Siklus 1</span></a>
+            <a href="topik-5.html" class="dropdown-item"><span class="dropdown-item-num">05</span><span>Praktik Mandiri Siklus 2</span></a>
+            <a href="topik-6.html" class="dropdown-item"><span class="dropdown-item-num">06</span><span>Praktik Mandiri Siklus 3</span></a>
+            <a href="topik-7.html" class="dropdown-item"><span class="dropdown-item-num">07</span><span>Praktik Mandiri Siklus 4</span></a>
+            <a href="topik-8.html" class="dropdown-item"><span class="dropdown-item-num">08</span><span>Kegiatan Non-Mengajar</span></a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="refleksi.html" class="nav-link">Refleksi</a></div>
+        <div class="nav-item"><a href="galeri.html" class="nav-link">Galeri</a></div>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-header-search" onclick="openSearchModal()" aria-label="Buka pencarian">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <span>Cari Berkas</span>
+        </button>
+        <button type="button" class="mobile-nav-toggle" aria-label="Buka menu navigasi">
+          <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Navigasi Mobile">
+    <div class="drawer-header">
+      <span style="font-weight: 800; color: #FFFFFF; font-size: 1rem;">Navigasi Portofolio</span>
+      <button type="button" class="drawer-close" aria-label="Tutup menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="profil.html" class="mobile-nav-link">Profil Calon Guru</a></li>
+      <li>
+        <span class="mobile-nav-link" style="color: var(--color-athletic-orange); font-size: 0.85rem; text-transform: uppercase;">Delapan Topik PPL Mandiri</span>
+        <div class="mobile-subnav">
+          <a href="topik-1.html" class="mobile-subnav-link">Topik 1 — Orientasi & Manajemen</a>
+          <a href="topik-2.html" class="mobile-subnav-link">Topik 2 — Observasi Lingkungan</a>
+          <a href="topik-3.html" class="mobile-subnav-link active">Topik 3 — Praktik Terbimbing</a>
+          <a href="topik-4.html" class="mobile-subnav-link">Topik 4 — Mandiri Siklus 1</a>
+          <a href="topik-5.html" class="mobile-subnav-link">Topik 5 — Mandiri Siklus 2</a>
+          <a href="topik-6.html" class="mobile-subnav-link">Topik 6 — Mandiri Siklus 3</a>
+          <a href="topik-7.html" class="mobile-subnav-link">Topik 7 — Mandiri Siklus 4</a>
+          <a href="topik-8.html" class="mobile-subnav-link">Topik 8 — Kegiatan Non-Mengajar</a>
+        </div>
+      </li>
+      <li><a href="refleksi.html" class="mobile-nav-link">Refleksi Pembelajaran</a></li>
+      <li><a href="galeri.html" class="mobile-nav-link">Galeri Dokumentasi</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- TOPIC HERO BANNER -->
+    <section class="section section-navy" style="padding: clamp(2.5rem, 5vw, 4rem) 0;">
+      <div class="container">
+        <div style="font-size: 0.85rem; color: rgba(248, 247, 243, 0.7); margin-bottom: 0.75rem;">
+          <a href="index.html" style="color: rgba(248, 247, 243, 0.8);">Beranda</a> &rsaquo;
+          <a href="index.html#topik-ppl" style="color: rgba(248, 247, 243, 0.8);">Topik PPL Mandiri</a> &rsaquo;
+          <span style="color: var(--color-athletic-orange);">Topik 3</span>
+        </div>
+        
+        <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.75rem;">
+          <span class="topic-number-badge" style="background: rgba(244, 119, 56, 0.2); color: var(--color-athletic-orange);">03</span>
+          <span class="badge badge-orange">Praktik Terbimbing</span>
+        </div>
+
+        <h1 class="hero-title" style="margin-bottom: 0.75rem;">Praktik Pembelajaran Terbimbing</h1>
+        <p class="section-subtitle" style="color: rgba(248, 247, 243, 0.85); max-width: 740px;">
+          Pelaksanaan pengajaran perdana di bawah bimbingan langsung Guru Pamong SD Laboratorium UM dan Dosen Pembimbing Lapangan, mencakup telaah perangkat ajar, perekaman video praktik, dan refleksi bimbingan pedagogis.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: BERKAS DIGITAL TOPIK 3 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-left">
+          <div class="track-lane-line">Tiga Komponen Wajib</div>
+          <h2 class="section-title">Perangkat Ajar, Video & Refleksi Terbimbing</h2>
+          <p class="section-subtitle">
+            Seluruh berkas persyaratan praktik pembelajaran terbimbing sesuai pedoman kurikulum PPG.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <!-- Item 1: Perangkat Pembelajaran -->
+          <div class="doc-card" data-category="perangkat" data-type="pdf">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-pdf">PDF</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Perangkat Pembelajaran</span>
+                  <h4 class="doc-title">Modul Ajar Pembelajaran Terbimbing</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Modul ajar yang disusun dengan supervisi Guru Pamong, memuat capaian pembelajaran gerak, rancangan aktivitas terstruktur, media, dan lembar kerja.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Format: <strong>PDF</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openDocModal('Modul Ajar Pembelajaran Terbimbing', 'Perangkat Pembelajaran', 'assets/docs/Modul_Ajar_Terbimbing.pdf', false, 'Modul ajar praktik terbimbing SD Laboratorium UM.')">
+                  Buka Dokumen
+                </button>
+                <button type="button" class="btn btn-outline-gdrive btn-sm" onclick="openGdriveModal('', 'Modul Ajar Pembelajaran Terbimbing', 'Perangkat Pembelajaran', 'assets/docs/Modul_Ajar_Terbimbing.pdf', false, 'Modul ajar praktik terbimbing SD Laboratorium UM.')">
+                  <svg viewBox="0 0 87.3 78" width="14" height="14" style="vertical-align: middle;"><path d="m6.6 66.85 3.85 6.65c.8 1.4 1.9 2.5 3.2 3.3l12.3-21.3-6.65-11.55c-.8 1.4-1.2 2.95-1.2 4.6 0 1.65.4 3.2 1.2 4.6z" fill="#0066da"/><path d="m43.65 25-12.3-21.3c-1.3.8-2.4 1.9-3.2 3.3l-21.55 37.35c-.8 1.4-1.2 2.95-1.2 4.6h24.6z" fill="#00ac47"/><path d="m73.55 76.8c1.3-.8 2.4-1.9 3.2-3.3l1.6-2.75 3.85-6.65c.8-1.4 1.2-2.95 1.2-4.6s-.4-3.2-1.2-4.6l-21.55-37.35c-.8-1.4-1.9-2.5-3.2-3.3l-12.3 21.3 16.15 28z" fill="#ea4335"/><path d="m43.65 25 12.3-21.3c-1.3-.8-2.8-1.2-4.45-1.2h-15.7c-1.65 0-3.15.4-4.45 1.2z" fill="#00832d"/><path d="m59.8 53.5h-32.3l-12.3 21.3c1.3.8 2.8 1.2 4.45 1.2h47.9c1.65 0 3.15-.4 4.45-1.2z" fill="#2684fc"/><path d="m73.4 26.5-6.65-11.55-12.3 21.3 6.65 11.55c.8-1.4 1.9-2.5 3.2-3.3z" fill="#ffba00"/></svg>
+                  Preview GDrive
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Video Praktik Mengajar -->
+          <div class="doc-card" data-category="video" data-type="video">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-video">MP4</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Video Praktik</span>
+                  <h4 class="doc-title">Video Pelaksanaan Praktik Terbimbing</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Rekaman video pengajaran terbimbing di lapangan sekolah yang memperlihatkan pembukaan, demonstrasi gerak, dan bimbingan langsung guru pamong.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Format: <strong>Video</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openVideoModal('Video Pelaksanaan Praktik Mengajar Terbimbing', '', 'Video pengajaran terbimbing bersama Guru Pamong SD Laboratorium UM.')">
+                  Putar Video
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Refleksi Analisis Mendalam (LK 3) -->
+          <div class="doc-card" data-category="refleksi" data-type="doc" style="border: 2px solid var(--color-soft-green);">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background-color: var(--status-available-bg); color: var(--status-available-text); border: 1px solid var(--status-available-border);">LK 3</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge" style="color: var(--color-soft-green);">Refleksi Resmi • LK 3</span>
+                  <h4 class="doc-title">Refleksi Praktik Mengajar Terbimbing (LK 3)</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Dokumen resmi LK 3 memuat evaluasi pembelajaran bola basket kelas V, identifikasi kendala variasi motorik, umpan balik Guru Pamong Anang Marzuqi, S.Pd., dan persetujuan DPL Prof. Yusuf Hanafi, S.Ag, M.Fil.I.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Status: <strong style="color: var(--status-available-text);">Tersedia & Terverifikasi</strong></span>
+                <span class="badge badge-status-available">Tersedia</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openReflectionModal('terbimbing')">
+                  Buka Lembar LK 3
+                </button>
+                <button type="button" class="btn btn-outline-gdrive btn-sm" onclick="openGdriveModal('terbimbing')">
+                  <svg viewBox="0 0 87.3 78" width="14" height="14" style="vertical-align: middle;"><path d="m6.6 66.85 3.85 6.65c.8 1.4 1.9 2.5 3.2 3.3l12.3-21.3-6.65-11.55c-.8 1.4-1.2 2.95-1.2 4.6 0 1.65.4 3.2 1.2 4.6z" fill="#0066da"/><path d="m43.65 25-12.3-21.3c-1.3.8-2.4 1.9-3.2 3.3l-21.55 37.35c-.8 1.4-1.2 2.95-1.2 4.6h24.6z" fill="#00ac47"/><path d="m73.55 76.8c1.3-.8 2.4-1.9 3.2-3.3l1.6-2.75 3.85-6.65c.8-1.4 1.2-2.95 1.2-4.6s-.4-3.2-1.2-4.6l-21.55-37.35c-.8-1.4-1.9-2.5-3.2-3.3l-12.3 21.3 16.15 28z" fill="#ea4335"/><path d="m43.65 25 12.3-21.3c-1.3-.8-2.8-1.2-4.45-1.2h-15.7c-1.65 0-3.15.4-4.45 1.2z" fill="#00832d"/><path d="m59.8 53.5h-32.3l-12.3 21.3c1.3.8 2.8 1.2 4.45 1.2h47.9c1.65 0 3.15-.4 4.45-1.2z" fill="#2684fc"/><path d="m73.4 26.5-6.65-11.55-12.3 21.3 6.65 11.55c.8-1.4 1.9-2.5 3.2-3.3z" fill="#ffba00"/></svg>
+                  Preview GDrive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CATATAN BIMBINGAN & EVALUASI GURU PAMONG -->
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-header text-left">
+          <div class="track-lane-line lane-orange">Bimbingan Lapangan</div>
+          <h2 class="section-title">Poin Penting Pembelajaran Terbimbing</h2>
+          <p class="section-subtitle">
+            Fondasi penguatan pedagogis calon guru sebelum melangkah ke praktik pengajaran mandiri siklus 1 hingga siklus 4.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border: 1px solid var(--color-warm-border);">
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">1. Manajemen Suara & Penguasaan Lapangan Terbuka</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Dalam situasi lapangan outdoor yang luas dengan distraksi angin dan kebisingan sekitar, Guru Pamong memberikan pembinaan mengenai posisi berdiri membelakangi arah sinar matahari/angin, variasi sinyal peluit edukatif, dan intonasi instruksi yang lugas dan berenergi.
+            </p>
+          </div>
+
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border: 1px solid var(--color-warm-border);">
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">2. Apersepsi & Pemanasan Konseptual</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Praktik terbimbing mengarahkan transisi dari pemanasan statis konvensional menjadi pemanasan dinamis yang berbasis permainan kecil (warming-up games). Hal ini terbukti meningkatkan antusiasme siswa sejak menit pertama sesi pembelajaran.
+            </p>
+          </div>
+
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border: 1px solid var(--color-warm-border);">
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">3. Koreksi Gerak Humanis & Positif</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Pamong membimbing calon guru untuk memberikan umpan balik koreksi gerak secara personal tanpa mempermalukan peserta didik di hadapan teman-temannya. Pujian diberikan pada usaha dan proses gerak, bukan semata pada hasil fisik yang dicapai.
+            </p>
+          </div>
+
+          <div style="background-color: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border: 1px solid var(--color-warm-border);">
+            <h4 style="color: var(--color-midnight-navy); margin-bottom: 0.5rem;">4. Pendinginan & Penguatan Nilai Karakter</h4>
+            <p style="font-size: 0.9rem; color: var(--color-graphite-light); line-height: 1.6; margin: 0;">
+              Fase penutup ditekankan bukan hanya untuk mengembalikan denyut nadi normal, melainkan menjadi arena refleksi kelas: menanyakan perasaan siswa, membahas nilai kejujuran selama bertanding, serta merapikan peralatan olahraga bersama-sama.
+            </p>
+          </div>
+        </div>
+
+        <!-- AUTHENTIC LK 3 DISPLAY -->
+        <div style="margin-top: 2.5rem; background: #FFFFFF; border: 2px solid var(--color-soft-green); border-radius: var(--radius-lg); padding: clamp(1.5rem, 3vw, 2.25rem); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 2px solid var(--color-soft-green); padding-bottom: 0.85rem; margin-bottom: 1.25rem;">
+            <div>
+              <span class="badge badge-status-available" style="margin-bottom: 0.35rem;">Dokumen Terverifikasi</span>
+              <h3 style="color: var(--color-midnight-navy); margin: 0; font-size: 1.25rem;">LEMBAR KERJA (LK) 3 — Refleksi Praktik Mengajar Terbimbing</h3>
+            </div>
+            <button type="button" class="btn btn-outline-navy btn-sm" onclick="openReflectionModal('terbimbing')">
+              Buka Layar Penuh / Cetak
+            </button>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.85rem; color: var(--color-graphite-light); background: var(--color-warm-white); padding: 0.85rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+            <div>Mahasiswa: <strong style="color: var(--color-midnight-navy);">Achmad Miftachul Firdaus</strong> (NIM 25316173727)</div>
+            <div>Materi / Bidang: <strong style="color: var(--color-midnight-navy);">PJOK — Bola Basket Kelas V</strong></div>
+            <div>Guru Pamong: <strong style="color: var(--color-midnight-navy);">Anang Marzuqi, S.Pd.</strong></div>
+            <div>Dosen Pembimbing Lapangan: <strong style="color: var(--color-midnight-navy);">Prof. Yusuf Hanafi, S.Ag, M.Fil.I</strong></div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.92rem;">
+            <div style="border-left: 3px solid var(--color-athletic-orange); padding-left: 1rem;">
+              <strong style="color: var(--color-midnight-navy); display: block; margin-bottom: 0.25rem;">Aktivitas Pembelajaran yang Berhasil:</strong>
+              <p style="margin: 0; color: var(--color-graphite); line-height: 1.6;">
+                Peserta didik menerapkan seluruh teknik dasar yang telah dipelajari dari sebelumnya ke dalam situasi permainan nyata yang kompetitif namun tetap menyenangkan. Di penghujung aktivitas peserta didik diajak melingkar bersama untuk melakukan pendinginan sekaligus refleksi singkat mengenai apa saja yang dirasakan, kesulitan yang dihadapi, serta bagian mana dari permainan bola basket hari itu yang paling membuat senang.
+              </p>
+            </div>
+
+            <div style="border-left: 3px solid #D9534F; padding-left: 1rem;">
+              <strong style="color: var(--color-midnight-navy); display: block; margin-bottom: 0.25rem;">Kendala & Faktor Penghambat:</strong>
+              <p style="margin: 0; color: var(--color-graphite); line-height: 1.6;">
+                Tingkat kemampuan fisik dan koordinasi gerak antar peserta didik di kelas V sangat bervariasi. Sebagian peserta didik sudah mahir memegang dan menggiring bola basket, sementara sebagian lainnya masih ragu-ragu, takut bola basket terlalu keras/berat, atau kesulitan mengontrol bola.
+              </p>
+            </div>
+
+            <div style="border-left: 3px solid var(--color-soft-green); padding-left: 1rem;">
+              <strong style="color: var(--color-midnight-navy); display: block; margin-bottom: 0.25rem;">Reaksi & Keterlibatan Murid:</strong>
+              <p style="margin: 0; color: var(--color-graphite); line-height: 1.6;">
+                Peserta didik menunjukkan ekspresi wajah yang ceria, tertawa, dan bersemangat sejak sesi pemanasan hingga inti permainan. Mereka tidak terlihat tertekan atau bosan.
+              </p>
+            </div>
+
+            <div style="border-left: 3px solid var(--color-midnight-navy); padding-left: 1rem;">
+              <strong style="color: var(--color-midnight-navy); display: block; margin-bottom: 0.25rem;">Umpan Balik Guru Pamong (Anang Marzuqi, S.Pd.):</strong>
+              <p style="margin: 0; color: var(--color-graphite); line-height: 1.6;">
+                Penambahan media digital ke dalam modul ajar PJOK materi bola basket ini akan membuat pembelajaran jauh lebih interaktif, modern, serta sangat mendukung implementasi pembelajaran aktif.
+              </p>
+            </div>
+
+            <div style="border-left: 3px solid var(--color-athletic-orange); padding-left: 1rem;">
+              <strong style="color: var(--color-midnight-navy); display: block; margin-bottom: 0.25rem;">Rencana Perubahan Rancangan:</strong>
+              <p style="margin: 0; color: var(--color-graphite); line-height: 1.6;">
+                Bagi kelompok yang membutuhkan pendampingan, diberikan modifikasi alat serta penerapan tutor sebaya (peer tutoring) dengan menunjuk ketua kelompok yang terampil.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--color-warm-border); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center; font-size: 0.85rem;">
+            <div>
+              <span class="text-muted">Guru Pamong:</span><br>
+              <strong style="color: var(--color-midnight-navy); text-decoration: underline;">Anang Marzuqi, S.Pd.</strong>
+            </div>
+            <div>
+              <span class="text-muted">Dosen Pembimbing Lapangan:</span><br>
+              <strong style="color: var(--color-midnight-navy); text-decoration: underline;">Prof. Yusuf Hanafi, S.Ag, M.Fil.I</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sequential Navigation -->
+        <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; border-top: 1px solid var(--color-warm-border);">
+          <a href="topik-2.html" class="btn btn-secondary btn-sm" style="color: var(--color-midnight-navy); border-color: var(--color-graphite-border);">
+            &larr; Topik 2: Observasi Lingkungan
+          </a>
+          <a href="topik-4.html" class="btn btn-primary btn-sm">
+            Lanjut ke Topik 4: Mandiri Siklus 1 &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- SECTION: PRATINJAU DOKUMEN GOOGLE DRIVE -->
+    <section class="section section-tint" id="gdrive-section" style="border-top: 2px dashed var(--color-warm-border);">
+      <div class="container">
+        <div class="section-header text-left">
+          <span class="badge badge-gdrive" style="margin-bottom: 0.5rem;">
+            <svg viewBox="0 0 87.3 78" width="14" height="14" style="vertical-align: middle;"><path d="m6.6 66.85 3.85 6.65c.8 1.4 1.9 2.5 3.2 3.3l12.3-21.3-6.65-11.55c-.8 1.4-1.2 2.95-1.2 4.6 0 1.65.4 3.2 1.2 4.6z" fill="#0066da"/><path d="m43.65 25-12.3-21.3c-1.3.8-2.4 1.9-3.2 3.3l-21.55 37.35c-.8 1.4-1.2 2.95-1.2 4.6h24.6z" fill="#00ac47"/><path d="m73.55 76.8c1.3-.8 2.4-1.9 3.2-3.3l1.6-2.75 3.85-6.65c.8-1.4 1.2-2.95 1.2-4.6s-.4-3.2-1.2-4.6l-21.55-37.35c-.8-1.4-1.9-2.5-3.2-3.3l-12.3 21.3 16.15 28z" fill="#ea4335"/><path d="m43.65 25 12.3-21.3c-1.3-.8-2.8-1.2-4.45-1.2h-15.7c-1.65 0-3.15.4-4.45 1.2z" fill="#00832d"/><path d="m59.8 53.5h-32.3l-12.3 21.3c1.3.8 2.8 1.2 4.45 1.2h47.9c1.65 0 3.15-.4 4.45-1.2z" fill="#2684fc"/><path d="m73.4 26.5-6.65-11.55-12.3 21.3 6.65 11.55c.8-1.4 1.9-2.5 3.2-3.3z" fill="#ffba00"/></svg>
+            Interactive PDF Viewer
+          </span>
+          <h2 class="section-title">Pratinjau Berkas PDF (Google Drive)</h2>
+          <p class="section-subtitle">
+            Pilih dokumen di bawah ini untuk melihat pratinjau lembar kerja, modul ajar, dan perangkat pembelajaran secara langsung melalui Google Drive.
+          </p>
+        </div>
+        <div class="gdrive-interactive-box" data-topic="topik-3"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>E-PORTOFOLIO PPL MANDIRI DI SD LABORATORIUM UM</h4>
+          <p class="footer-tagline">“Growing Through Practice, Teaching with Purpose.”</p>
+          <p class="footer-desc">
+            Portofolio digital resmi mahasiswa Program Pendidikan Profesi Guru (PPG) Universitas Negeri Malang dalam pelaksanaan Praktik Pengalaman Lapangan (PPL) Mandiri di SD Laboratorium UM.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Identitas Pemilik</h5>
+          <ul class="footer-links">
+            <li><strong>Nama:</strong> Achmad Miftachul Firdaus</li>
+            <li><strong>NIM:</strong> 25316173727</li>
+            <li><strong>LPTK:</strong> Universitas Negeri Malang</li>
+            <li><strong>Sekolah Praktik:</strong> SD Laboratorium UM</li>
+            <li><strong>Program:</strong> PPG Calon Guru</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigasi Topik PPL</h5>
+          <ul class="footer-links">
+            <li><a href="topik-1.html">Topik 1 — Manajemen Sekolah</a></li>
+            <li><a href="topik-2.html">Topik 2 — Observasi Lingkungan</a></li>
+            <li><a href="topik-3.html">Topik 3 — Praktik Terbimbing</a></li>
+            <li><a href="topik-4.html">Topik 4 — Praktik Mandiri Siklus 1</a></li>
+            <li><a href="topik-5.html">Topik 5 — Praktik Mandiri Siklus 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 E-Portofolio PPL Mandiri SD Laboratorium UM. Seluruh Hak Cipta Dilindungi.</div>
+        <div>Achmad Miftachul Firdaus • NIM 25316173727</div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="backToTopBtn" class="back-to-top" aria-label="Kembali ke atas">
+    <svg style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/gdrive-viewer.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/filter-search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+

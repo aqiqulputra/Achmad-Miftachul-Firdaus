@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <circle cx="60" cy="60" r="60" fill="#1E314B" />
+  <!-- Running track curves in avatar circle -->
+  <circle cx="60" cy="60" r="54" stroke="#F47738" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.6" />
+  
+  <!-- Teacher Silhouette Body -->
+  <path d="M26 108C26 91 38 78 54 75H66C82 78 94 91 94 108C94 112 90 114 86 114H34C30 114 26 112 26 108Z" fill="#F8F7F3" />
+  
+  <!-- Blazer / Collar -->
+  <path d="M48 76L60 92L72 76" stroke="#14243A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Athletic Orange Tie / Whistle Cord -->
+  <path d="M60 84L60 102" stroke="#F47738" stroke-width="4" stroke-linecap="round" />
+  <circle cx="60" cy="103" r="3.5" fill="#F47738" />
+
+  <!-- Head -->
+  <ellipse cx="60" cy="50" rx="18" ry="21" fill="#F8F7F3" />
+  
+  <!-- Hair Styled -->
+  <path d="M42 46C42 34 50 28 60 28C70 28 78 34 78 46C78 47 72 43 68 43C62 43 56 46 50 43C46 43 42 47 42 46Z" fill="#14243A" />
+</svg>
+

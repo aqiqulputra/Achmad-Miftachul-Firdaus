@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Rounded Base Shield -->
+  <rect width="100" height="100" rx="22" fill="#14243A" />
+  
+  <!-- Athletic Track Accents -->
+  <path d="M14 86C28 65 42 35 86 14" stroke="#F47738" stroke-width="5" stroke-linecap="round" opacity="0.4" />
+  <path d="M22 86C34 68 48 40 86 22" stroke="#6A8F78" stroke-width="4" stroke-linecap="round" opacity="0.3" />
+  
+  <!-- Academic Torch & Book Motif -->
+  <!-- Open Book Base -->
+  <path d="M26 68C34 64 44 65 50 69C56 65 66 64 74 68V48C66 44 56 45 50 49C44 45 34 44 26 48V68Z" fill="#F8F7F3" opacity="0.95" />
+  <path d="M50 49V69" stroke="#14243A" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Torch Handle -->
+  <path d="M47 52L50 64L53 52Z" fill="#F47738" />
+  <rect x="47" y="48" width="6" height="4" rx="1" fill="#DF6426" />
+
+  <!-- Dynamic Athletic Flame -->
+  <path d="M50 22C46 29 44 33 46 38C47 40 49 42 50 44C51 42 53 40 54 38C56 33 54 29 50 22Z" fill="#F47738" />
+  <path d="M50 28C48 32 47 34 48 38C49 39 50 41 50 42C51 41 52 39 52 38C53 34 52 32 50 28Z" fill="#FFC043" />
+
+  <!-- Laurels / Education Leaves -->
+  <circle cx="28" cy="38" r="3" fill="#6A8F78" />
+  <circle cx="23" cy="46" r="3" fill="#6A8F78" />
+  <circle cx="72" cy="38" r="3" fill="#6A8F78" />
+  <circle cx="77" cy="46" r="3" fill="#6A8F78" />
+  
+  <!-- Active Star -->
+  <polygon points="50,14 52,18 56,19 53,22 54,26 50,23 46,26 47,22 44,19 48,18" fill="#F8F7F3" />
+</svg>
+

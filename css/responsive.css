@@ -1,0 +1,210 @@
+/* ==========================================================================
+   E-PORTOFOLIO PPL MANDIRI DI SD LABORATORIUM UM
+   Responsive Stylesheet
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-card {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .nav-menu {
+    gap: 0.2rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.82rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+/* Tablets & Mobile (<= 860px) */
+@media (max-width: 860px) {
+  .nav-menu {
+    display: none; /* Controlled by mobile drawer */
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-actions .btn-header-search {
+    padding: 0.45rem 0.65rem;
+  }
+
+  .header-actions .btn-header-search span {
+    display: none;
+  }
+
+  .topbar-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .topbar-identity {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+/* Mobile Screens (<= 640px) */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-quote {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-card {
+    padding: 1.25rem;
+  }
+
+  .hero-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 1.25rem;
+  }
+
+  .hero-avatar svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .timeline-container::before {
+    left: 18px;
+  }
+
+  .timeline-item {
+    padding-left: 48px;
+  }
+
+  .timeline-badge {
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .filter-pills-row {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-pill {
+    flex-shrink: 0;
+  }
+
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+  }
+
+  .lightbox-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .lightbox-prev { left: 4px; }
+  .lightbox-next { right: 4px; }
+}
+
+/* Print Optimization for Academic Portfolio Grading */
+@media print {
+  .site-header,
+  .mobile-drawer,
+  .mobile-drawer-overlay,
+  .back-to-top,
+  .filter-search-container,
+  .modal-overlay,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .hero-section {
+    background: none !important;
+    color: #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+    padding: 1rem 0 !important;
+  }
+
+  .hero-title,
+  .hero-title .highlight-orange {
+    color: #000000 !important;
+  }
+
+  .hero-card {
+    background: #FFFFFF !important;
+    border: 1px solid #CCC !important;
+    color: #000000 !important;
+  }
+
+  .hero-cred-val,
+  .hero-cred-label {
+    color: #000000 !important;
+  }
+
+  .topic-card,
+  .doc-card,
+  .timeline-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #999 !important;
+  }
+}
+

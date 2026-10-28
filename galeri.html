@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Dokumentasi & Media PPL Mandiri di SD Laboratorium UM oleh Achmad Miftachul Firdaus (NIM 25316173727). Foto kegiatan, video praktik mengajar, dan arsip digital.">
+  <title>Galeri Dokumentasi & Media PPL | E-PORTOFOLIO PPL MANDIRI</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Identity Bar -->
+  <aside class="header-topbar" aria-label="Informasi Pemilik Portofolio">
+    <div class="container topbar-content">
+      <div class="topbar-identity">
+        <span class="topbar-identity-item">Nama: <strong>Achmad Miftachul Firdaus</strong></span>
+        <span class="topbar-identity-item">NIM: <strong>25316173727</strong></span>
+        <span class="topbar-identity-item">LPTK: <strong>Universitas Negeri Malang</strong></span>
+      </div>
+      <div class="topbar-identity">
+        <span>Sekolah Praktik: <strong>SD Laboratorium UM</strong></span>
+        <span class="topbar-badge">PPL Mandiri PPG</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-main">
+      <a href="index.html" class="brand-container">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">E-PORTOFOLIO PPL MANDIRI</span>
+          <span class="brand-subtitle">SD LABORATORIUM UM • PPG UNIVERSITAS NEGERI MALANG</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navigasi Utama">
+        <div class="nav-item"><a href="index.html" class="nav-link">Beranda</a></div>
+        <div class="nav-item"><a href="profil.html" class="nav-link">Profil</a></div>
+        <div class="nav-item">
+          <a href="index.html#topik-ppl" class="nav-link dropdown-trigger" aria-haspopup="true">Topik PPL (1-8)</a>
+          <div class="dropdown-menu">
+            <a href="topik-1.html" class="dropdown-item"><span class="dropdown-item-num">01</span><span>Orientasi & Manajemen</span></a>
+            <a href="topik-2.html" class="dropdown-item"><span class="dropdown-item-num">02</span><span>Observasi Lingkungan</span></a>
+            <a href="topik-3.html" class="dropdown-item"><span class="dropdown-item-num">03</span><span>Praktik Terbimbing</span></a>
+            <a href="topik-4.html" class="dropdown-item"><span class="dropdown-item-num">04</span><span>Praktik Mandiri Siklus 1</span></a>
+            <a href="topik-5.html" class="dropdown-item"><span class="dropdown-item-num">05</span><span>Praktik Mandiri Siklus 2</span></a>
+            <a href="topik-6.html" class="dropdown-item"><span class="dropdown-item-num">06</span><span>Praktik Mandiri Siklus 3</span></a>
+            <a href="topik-7.html" class="dropdown-item"><span class="dropdown-item-num">07</span><span>Praktik Mandiri Siklus 4</span></a>
+            <a href="topik-8.html" class="dropdown-item"><span class="dropdown-item-num">08</span><span>Kegiatan Non-Mengajar</span></a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="refleksi.html" class="nav-link">Refleksi</a></div>
+        <div class="nav-item"><a href="galeri.html" class="nav-link active">Galeri</a></div>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-header-search" onclick="openSearchModal()" aria-label="Buka pencarian">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <span>Cari Berkas</span>
+        </button>
+        <button type="button" class="mobile-nav-toggle" aria-label="Buka menu navigasi">
+          <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Navigasi Mobile">
+    <div class="drawer-header">
+      <span style="font-weight: 800; color: #FFFFFF; font-size: 1rem;">Navigasi Portofolio</span>
+      <button type="button" class="drawer-close" aria-label="Tutup menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="profil.html" class="mobile-nav-link">Profil Calon Guru</a></li>
+      <li>
+        <span class="mobile-nav-link" style="color: var(--color-athletic-orange); font-size: 0.85rem; text-transform: uppercase;">Delapan Topik PPL Mandiri</span>
+        <div class="mobile-subnav">
+          <a href="topik-1.html" class="mobile-subnav-link">Topik 1 — Orientasi & Manajemen</a>
+          <a href="topik-2.html" class="mobile-subnav-link">Topik 2 — Observasi Lingkungan</a>
+          <a href="topik-3.html" class="mobile-subnav-link">Topik 3 — Praktik Terbimbing</a>
+          <a href="topik-4.html" class="mobile-subnav-link">Topik 4 — Mandiri Siklus 1</a>
+          <a href="topik-5.html" class="mobile-subnav-link">Topik 5 — Mandiri Siklus 2</a>
+          <a href="topik-6.html" class="mobile-subnav-link">Topik 6 — Mandiri Siklus 3</a>
+          <a href="topik-7.html" class="mobile-subnav-link">Topik 7 — Mandiri Siklus 4</a>
+          <a href="topik-8.html" class="mobile-subnav-link">Topik 8 — Kegiatan Non-Mengajar</a>
+        </div>
+      </li>
+      <li><a href="refleksi.html" class="mobile-nav-link">Refleksi Pembelajaran</a></li>
+      <li><a href="galeri.html" class="mobile-nav-link active">Galeri Dokumentasi</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="section section-navy" style="padding: clamp(2.5rem, 5vw, 4rem) 0;">
+      <div class="container">
+        <div class="track-lane-line lane-orange">Dokumentasi Visual & Audio Visual</div>
+        <h1 class="hero-title" style="margin-bottom: 0.75rem;">Galeri Dokumentasi & Media PPL</h1>
+        <p class="section-subtitle" style="color: rgba(248, 247, 243, 0.85); max-width: 740px;">
+          Pusat dokumentasi foto aktivitas, video rekaman praktik mengajar, dan pratinjau media pembelajaran di SD Laboratorium UM yang dilengkapi pemutar video, lightbox interaktif, serta pencarian judul kegiatan.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: FILTER, PENCARIAN & MEDIA GRID -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter & Search Bar -->
+        <div class="filter-search-container">
+          <div class="search-input-group">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input type="text" id="docSearchInput" class="search-input" placeholder="Cari foto, video praktik, atau kegiatan PPL...">
+            <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="Hapus kata kunci">&times;</button>
+          </div>
+
+          <div class="filter-pills-row">
+            <button type="button" class="filter-pill active" data-filter="all">Semua Media</button>
+            <button type="button" class="filter-pill" data-filter="foto">Foto Kegiatan</button>
+            <button type="button" class="filter-pill" data-filter="video">Video Pembelajaran</button>
+            <button type="button" class="filter-pill" data-filter="perangkat">Perangkat Ajar</button>
+            <button type="button" class="filter-pill" data-filter="non-mengajar">Kegiatan Non-Mengajar</button>
+          </div>
+
+          <div class="filter-status-info">
+            <span id="docFilterCount">Menampilkan media...</span>
+            <span style="font-size: 0.8rem;">Klik pada item untuk membuka pratinjau Lightbox atau Video Player</span>
+          </div>
+        </div>
+
+        <!-- Grid Media -->
+        <div class="grid grid-cols-3" id="galleryGrid">
+          <!-- 1. Video Klip 1 Siklus 1 -->
+          <article class="doc-card" data-category="video" data-type="video" style="border: 2px solid var(--color-soft-green);">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-video" style="background-color: var(--status-available-bg); color: var(--status-available-text); border: 1px solid var(--status-available-border);">MP4</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge" style="color: var(--color-soft-green);">Video Pembelajaran • Topik 4</span>
+                  <h4 class="doc-title">Video Siklus 1: Apersepsi & Pemanasan Dinamis</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Apersepsi kontekstual mengaitkan gerakan melempar bola dengan kehidupan sehari-hari dan pemanasan lingkaran bersama siswa.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Video MP4</strong></span>
+                <span class="badge badge-status-available">Tersedia & Terverifikasi</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openVideoModal('Video Siklus 1: Apersepsi & Pemanasan Dinamis', 'https://drive.google.com/file/d/1GmbCgwzq82EYtlnqIzpVa7Orw9x4ELLG/view?usp=sharing', 'Apersepsi pemantik gerak manipulatif dan pemanasan melingkar murid kelas V.')">
+                  Putar Video
+                </button>
+                <a href="https://drive.google.com/file/d/1GmbCgwzq82EYtlnqIzpVa7Orw9x4ELLG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                  GDrive &nearr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Video Klip 2 Siklus 1 -->
+          <article class="doc-card" data-category="video" data-type="video" style="border: 2px solid var(--color-soft-green);">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-video" style="background-color: var(--status-available-bg); color: var(--status-available-text); border: 1px solid var(--status-available-border);">MP4</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge" style="color: var(--color-soft-green);">Video Pembelajaran • Topik 4</span>
+                  <h4 class="doc-title">Video Siklus 1: Kegiatan Inti Lempar Tangkap</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Pelaksanaan aktivitas inti pola gerak dasar manipulatif lempar tangkap bola basket di lapangan SD Laboratorium UM.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Video MP4</strong></span>
+                <span class="badge badge-status-available">Tersedia & Terverifikasi</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openVideoModal('Video Siklus 1: Kegiatan Inti Lempar Tangkap', 'https://drive.google.com/file/d/1NPLJthBA36JrZWm4P74_iWvFxjphT5tt/view?usp=sharing', 'Aktivitas inti latihan teknik lempar tangkap bola basket berpasangan.')">
+                  Putar Video
+                </button>
+                <a href="https://drive.google.com/file/d/1NPLJthBA36JrZWm4P74_iWvFxjphT5tt/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                  GDrive &nearr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Video Klip 3 Siklus 1 -->
+          <article class="doc-card" data-category="video" data-type="video" style="border: 2px solid var(--color-soft-green);">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-video" style="background-color: var(--status-available-bg); color: var(--status-available-text); border: 1px solid var(--status-available-border);">MP4</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge" style="color: var(--color-soft-green);">Video Pembelajaran • Topik 4</span>
+                  <h4 class="doc-title">Video Siklus 1: Latihan Berpasangan</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Siswa berlatih dalam kelompok berpasangan untuk melatih kontrol bola dan akurasi lemparan dengan bimbingan guru.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Video MP4</strong></span>
+                <span class="badge badge-status-available">Tersedia & Terverifikasi</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openVideoModal('Video Siklus 1: Latihan Berpasangan', 'https://drive.google.com/file/d/1ZzhCa6RaCxVJ8L0H5cTKP129jI_GkA9D/view?usp=sharing', 'Siswa berlatih dalam kelompok kecil berpasangan mengasah akurasi teknik.')">
+                  Putar Video
+                </button>
+                <a href="https://drive.google.com/file/d/1ZzhCa6RaCxVJ8L0H5cTKP129jI_GkA9D/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                  GDrive &nearr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Video Klip 4 Siklus 1 -->
+          <article class="doc-card" data-category="video" data-type="video" style="border: 2px solid var(--color-soft-green);">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-video" style="background-color: var(--status-available-bg); color: var(--status-available-text); border: 1px solid var(--status-available-border);">MP4</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge" style="color: var(--color-soft-green);">Video Pembelajaran • Topik 4</span>
+                  <h4 class="doc-title">Video Siklus 1: Pendinginan & Refleksi</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Sesi pendinginan santai dan diskusi refleksi bersama murid duduk melingkar di lapangan terbuka SD Lab UM.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Video MP4</strong></span>
+                <span class="badge badge-status-available">Tersedia & Terverifikasi</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openVideoModal('Video Siklus 1: Pendinginan & Refleksi Melingkar', 'https://drive.google.com/file/d/1AU4-d4af41AnTJ-bGbvvfQTQugm32AnG/view?usp=sharing', 'Pendinginan santai dan refleksi bersama murid duduk melingkar.')">
+                  Putar Video
+                </button>
+                <a href="https://drive.google.com/file/d/1AU4-d4af41AnTJ-bGbvvfQTQugm32AnG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                  GDrive &nearr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Foto 1 Siklus 2 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 2 — Penjelasan Alur Pos Latihan', 'https://drive.google.com/thumbnail?id=1SqFr61A0xP-9Wqxs36kavz_m7ZvuWfNu&sz=w800', 'https://drive.google.com/file/d/1SqFr61A0xP-9Wqxs36kavz_m7ZvuWfNu/view?usp=sharing', 'Guru memberikan arahan pembagian pos latihan dan tata tertib aktivitas gerak.')">
+              <img src="https://drive.google.com/thumbnail?id=1SqFr61A0xP-9Wqxs36kavz_m7ZvuWfNu&sz=w800" alt="Penjelasan Alur Pos Latihan" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 2</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 5</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 2: Penjelasan Alur Pos Latihan</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Guru memberikan arahan pembagian pos latihan bola basket dan keselamatan peserta didik di lapangan.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 2 — Penjelasan Alur Pos Latihan', 'https://drive.google.com/thumbnail?id=1SqFr61A0xP-9Wqxs36kavz_m7ZvuWfNu&sz=w800', 'https://drive.google.com/file/d/1SqFr61A0xP-9Wqxs36kavz_m7ZvuWfNu/view?usp=sharing', 'Guru memberikan arahan pembagian pos latihan dan tata tertib aktivitas gerak.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1SqFr61A0xP-9Wqxs36kavz_m7ZvuWfNu/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Foto 2 Siklus 2 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 2 — Aktivitas Gerak Pos Terstruktur', 'https://drive.google.com/thumbnail?id=1EdRglpPAuQgGVS8qMgjTqJrPHvR7Dj-E&sz=w800', 'https://drive.google.com/file/d/1EdRglpPAuQgGVS8qMgjTqJrPHvR7Dj-E/view?usp=sharing', 'Siswa mempraktikkan variasi lemparan dan kontrol bola di pos masing-masing.')">
+              <img src="https://drive.google.com/thumbnail?id=1EdRglpPAuQgGVS8qMgjTqJrPHvR7Dj-E&sz=w800" alt="Aktivitas Gerak Pos Terstruktur" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 2</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 5</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 2: Aktivitas Gerak Pos Terstruktur</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Siswa mempraktikkan variasi lemparan dan kontrol bola di pos masing-masing dengan antusiasme tinggi.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 2 — Aktivitas Gerak Pos Terstruktur', 'https://drive.google.com/thumbnail?id=1EdRglpPAuQgGVS8qMgjTqJrPHvR7Dj-E&sz=w800', 'https://drive.google.com/file/d/1EdRglpPAuQgGVS8qMgjTqJrPHvR7Dj-E/view?usp=sharing', 'Siswa mempraktikkan variasi lemparan dan kontrol bola di pos masing-masing.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1EdRglpPAuQgGVS8qMgjTqJrPHvR7Dj-E/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Foto 3 Siklus 2 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 2 — Integrasi Kuis Digital & Visual', 'https://drive.google.com/thumbnail?id=1rEdVjDzzvZ_mb6sKcfesF0BG3kH4MHHi&sz=w800', 'https://drive.google.com/file/d/1rEdVjDzzvZ_mb6sKcfesF0BG3kH4MHHi/view?usp=sharing', 'Pemanfaatan media visual interaktif dan kuis digital untuk pemahaman taktik gerak.')">
+              <img src="https://drive.google.com/thumbnail?id=1rEdVjDzzvZ_mb6sKcfesF0BG3kH4MHHi&sz=w800" alt="Integrasi Kuis Digital" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 2</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 5</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 2: Integrasi Kuis Digital & Visual</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Pemanfaatan media visual interaktif dan kuis digital untuk memperdalam pemahaman taktik gerak siswa.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 2 — Integrasi Kuis Digital & Visual', 'https://drive.google.com/thumbnail?id=1rEdVjDzzvZ_mb6sKcfesF0BG3kH4MHHi&sz=w800', 'https://drive.google.com/file/d/1rEdVjDzzvZ_mb6sKcfesF0BG3kH4MHHi/view?usp=sharing', 'Pemanfaatan media visual interaktif dan kuis digital untuk pemahaman taktik gerak.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1rEdVjDzzvZ_mb6sKcfesF0BG3kH4MHHi/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Foto 4 Siklus 2 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 2 — Pendampingan & Umpan Balik Guru', 'https://drive.google.com/thumbnail?id=1XXnVnM5xyHzWAlpbEo7gkVkXSv-6JRQ_&sz=w800', 'https://drive.google.com/file/d/1XXnVnM5xyHzWAlpbEo7gkVkXSv-6JRQ_/view?usp=sharing', 'Guru berkeliling memberikan motivasi dan koreksi teknik secara suportif.')">
+              <img src="https://drive.google.com/thumbnail?id=1XXnVnM5xyHzWAlpbEo7gkVkXSv-6JRQ_&sz=w800" alt="Pendampingan Guru" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 2</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 5</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 2: Pendampingan & Umpan Balik</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Guru berkeliling memberikan motivasi, apresiasi, dan koreksi teknik secara suportif kepada peserta didik.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 2 — Pendampingan & Umpan Balik Guru', 'https://drive.google.com/thumbnail?id=1XXnVnM5xyHzWAlpbEo7gkVkXSv-6JRQ_&sz=w800', 'https://drive.google.com/file/d/1XXnVnM5xyHzWAlpbEo7gkVkXSv-6JRQ_/view?usp=sharing', 'Guru berkeliling memberikan motivasi dan koreksi teknik secara suportif.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1XXnVnM5xyHzWAlpbEo7gkVkXSv-6JRQ_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Foto 1 Siklus 3 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 3 — Penataan Skenario Diferensiasi Gerak', 'https://drive.google.com/thumbnail?id=1xGF2ipBoz3pcckcg5IAXOu9GkXIeL7RB&sz=w800', 'https://drive.google.com/file/d/1xGF2ipBoz3pcckcg5IAXOu9GkXIeL7RB/view?usp=sharing', 'Penyiapan pos tantangan gerak berjenjang sesuai karakteristik murid.')">
+              <img src="https://drive.google.com/thumbnail?id=1xGF2ipBoz3pcckcg5IAXOu9GkXIeL7RB&sz=w800" alt="Penataan Skenario Diferensiasi" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 3</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 6</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 3: Penataan Skenario Diferensiasi</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Penyiapan pos tantangan gerak berjenjang disesuaikan dengan tingkat keterampilan siswa.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 3 — Penataan Skenario Diferensiasi Gerak', 'https://drive.google.com/thumbnail?id=1xGF2ipBoz3pcckcg5IAXOu9GkXIeL7RB&sz=w800', 'https://drive.google.com/file/d/1xGF2ipBoz3pcckcg5IAXOu9GkXIeL7RB/view?usp=sharing', 'Penyiapan pos tantangan gerak berjenjang sesuai karakteristik murid.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1xGF2ipBoz3pcckcg5IAXOu9GkXIeL7RB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Foto 2 Siklus 3 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 3 — Eksplorasi Motorik Kreatif Siswa', 'https://drive.google.com/thumbnail?id=1s7NTIJu3zPJd8QL3-erVqPQpjlyRc8i1&sz=w800', 'https://drive.google.com/file/d/1s7NTIJu3zPJd8QL3-erVqPQpjlyRc8i1/view?usp=sharing', 'Siswa mencoba rute gerakan kreatif dan bekerjasama dalam tim dengan sportivitas.')">
+              <img src="https://drive.google.com/thumbnail?id=1s7NTIJu3zPJd8QL3-erVqPQpjlyRc8i1&sz=w800" alt="Eksplorasi Motorik Kreatif" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 3</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 6</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 3: Eksplorasi Motorik Kreatif</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Siswa mencoba rute gerakan kreatif dan bekerjasama dalam tim dengan semangat sportivitas.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 3 — Eksplorasi Motorik Kreatif Siswa', 'https://drive.google.com/thumbnail?id=1s7NTIJu3zPJd8QL3-erVqPQpjlyRc8i1&sz=w800', 'https://drive.google.com/file/d/1s7NTIJu3zPJd8QL3-erVqPQpjlyRc8i1/view?usp=sharing', 'Siswa mencoba rute gerakan kreatif dan bekerjasama dalam tim dengan sportivitas.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1s7NTIJu3zPJd8QL3-erVqPQpjlyRc8i1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Foto 3 Siklus 3 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 3 — Interaksi Personal & Pembimbingan', 'https://drive.google.com/thumbnail?id=1nNdUv6G0NeOV0bdlP5TKAuO05kvEMKj2&sz=w800', 'https://drive.google.com/file/d/1nNdUv6G0NeOV0bdlP5TKAuO05kvEMKj2/view?usp=sharing', 'Komunikasi dua arah guru dan murid memastikan lingkungan belajar suportif.')">
+              <img src="https://drive.google.com/thumbnail?id=1nNdUv6G0NeOV0bdlP5TKAuO05kvEMKj2&sz=w800" alt="Interaksi Personal & Bimbingan" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 3</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 6</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 3: Interaksi Personal & Bimbingan</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Komunikasi dua arah guru dan murid memastikan anak merasa percaya diri dalam latihan.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 3 — Interaksi Personal & Pembimbingan', 'https://drive.google.com/thumbnail?id=1nNdUv6G0NeOV0bdlP5TKAuO05kvEMKj2&sz=w800', 'https://drive.google.com/file/d/1nNdUv6G0NeOV0bdlP5TKAuO05kvEMKj2/view?usp=sharing', 'Komunikasi dua arah guru dan murid memastikan lingkungan belajar suportif.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1nNdUv6G0NeOV0bdlP5TKAuO05kvEMKj2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Foto 4 Siklus 3 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 3 — Evaluasi Formatif & Refleksi Bersama', 'https://drive.google.com/thumbnail?id=1YprALmr1pWLbrIjHoRUc4nFT4usimacf&sz=w800', 'https://drive.google.com/file/d/1YprALmr1pWLbrIjHoRUc4nFT4usimacf/view?usp=sharing', 'Apresiasi capaian motorik siswa dan refleksi penanaman nilai kejujuran.')">
+              <img src="https://drive.google.com/thumbnail?id=1YprALmr1pWLbrIjHoRUc4nFT4usimacf&sz=w800" alt="Evaluasi Formatif & Refleksi" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 3</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 6</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 3: Evaluasi Formatif & Refleksi</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Apresiasi capaian motorik siswa dan refleksi penanaman nilai kejujuran dan sportivitas.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 3 — Evaluasi Formatif & Refleksi Bersama', 'https://drive.google.com/thumbnail?id=1YprALmr1pWLbrIjHoRUc4nFT4usimacf&sz=w800', 'https://drive.google.com/file/d/1YprALmr1pWLbrIjHoRUc4nFT4usimacf/view?usp=sharing', 'Apresiasi capaian motorik siswa dan refleksi penanaman nilai kejujuran.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1YprALmr1pWLbrIjHoRUc4nFT4usimacf/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. Foto 1 Siklus 4 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 4 — Pembelajaran Teknik Bola Voli', 'https://drive.google.com/thumbnail?id=1gj2z7Mw14sJuT8KUkAddt0zB0guy0JMA&sz=w800', 'https://drive.google.com/file/d/1gj2z7Mw14sJuT8KUkAddt0zB0guy0JMA/view?usp=sharing', 'Pengenalan dan demonstrasi teknik dasar passing bola voli dengan kuda-kuda kaki yang tepat.')">
+              <img src="https://drive.google.com/thumbnail?id=1gj2z7Mw14sJuT8KUkAddt0zB0guy0JMA&sz=w800" alt="Pembelajaran Teknik Bola Voli" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 4</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 7</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 4: Teknik Bola Voli</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Pengenalan dan demonstrasi teknik dasar passing bola voli dengan kuda-kuda kaki yang tepat.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 4 — Pembelajaran Teknik Bola Voli', 'https://drive.google.com/thumbnail?id=1gj2z7Mw14sJuT8KUkAddt0zB0guy0JMA&sz=w800', 'https://drive.google.com/file/d/1gj2z7Mw14sJuT8KUkAddt0zB0guy0JMA/view?usp=sharing', 'Pengenalan dan demonstrasi teknik dasar passing bola voli dengan kuda-kuda kaki yang tepat.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1gj2z7Mw14sJuT8KUkAddt0zB0guy0JMA/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. Foto 2 Siklus 4 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 4 — Praktik Passing Berpasangan & Mini Game', 'https://drive.google.com/thumbnail?id=1pr4db9uJH_H6nOjFxT3ijf7LQOoHfJPz&sz=w800', 'https://drive.google.com/file/d/1pr4db9uJH_H6nOjFxT3ijf7LQOoHfJPz/view?usp=sharing', 'Siswa bermain simulasi mini game bola voli di lapangan luar SD Laboratorium UM.')">
+              <img src="https://drive.google.com/thumbnail?id=1pr4db9uJH_H6nOjFxT3ijf7LQOoHfJPz&sz=w800" alt="Praktik Passing & Mini Game" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 4</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 7</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 4: Praktik Passing & Mini Game</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Siswa bermain simulasi mini game bola voli di lapangan luar SD Laboratorium UM dengan kerjasama regu.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 4 — Praktik Passing Berpasangan & Mini Game', 'https://drive.google.com/thumbnail?id=1pr4db9uJH_H6nOjFxT3ijf7LQOoHfJPz&sz=w800', 'https://drive.google.com/file/d/1pr4db9uJH_H6nOjFxT3ijf7LQOoHfJPz/view?usp=sharing', 'Siswa bermain simulasi mini game bola voli di lapangan luar SD Laboratorium UM.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1pr4db9uJH_H6nOjFxT3ijf7LQOoHfJPz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15. Foto 3 Siklus 4 -->
+          <article class="doc-card" data-category="foto" data-type="foto" style="border: 2px solid var(--color-soft-green); overflow: hidden; padding: 0;">
+            <div style="position: relative; height: 160px; background: #14243A; overflow: hidden; cursor: pointer;" onclick="openImageModal('Dokumentasi Siklus 4 — Peran Pemimpin Murid & Pendinginan', 'https://drive.google.com/thumbnail?id=1bMZAotfq32Xat0MmewCRwYtZsqF9iiUC&sz=w800', 'https://drive.google.com/file/d/1bMZAotfq32Xat0MmewCRwYtZsqF9iiUC/view?usp=sharing', 'Memberdayakan murid memimpin pemanasan dan pendinginan sesuai saran guru pamong.')">
+              <img src="https://drive.google.com/thumbnail?id=1bMZAotfq32Xat0MmewCRwYtZsqF9iiUC&sz=w800" alt="Pemimpin Murid & Pendinginan" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px;">Foto • Siklus 4</span>
+            </div>
+            <div style="padding: 1.15rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <span class="doc-category-badge" style="color: var(--color-soft-green); font-size: 0.75rem;">Foto Kegiatan • Topik 7</span>
+                <h4 class="doc-title" style="font-size: 0.95rem; margin-top: 0.25rem;">Foto Siklus 4: Pemimpin Murid & Pendinginan</h4>
+                <p class="doc-description" style="font-size: 0.83rem; margin-bottom: 0.75rem;">
+                  Implementasi masukan pamong dengan memberdayakan murid sebagai pemimpin pemanasan dan pendinginan.
+                </p>
+              </div>
+              <div>
+                <div class="doc-meta-row" style="font-size: 0.8rem; margin-bottom: 0.75rem;">
+                  <span>Format: <strong>JPG Foto</strong></span>
+                  <span class="badge badge-status-available">Tersedia</span>
+                </div>
+                <div class="doc-actions-row">
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openImageModal('Dokumentasi Siklus 4 — Peran Pemimpin Murid & Pendinginan', 'https://drive.google.com/thumbnail?id=1bMZAotfq32Xat0MmewCRwYtZsqF9iiUC&sz=w800', 'https://drive.google.com/file/d/1bMZAotfq32Xat0MmewCRwYtZsqF9iiUC/view?usp=sharing', 'Memberdayakan murid memimpin pemanasan dan pendinginan sesuai saran guru pamong.')">
+                    Lihat Foto
+                  </button>
+                  <a href="https://drive.google.com/file/d/1bMZAotfq32Xat0MmewCRwYtZsqF9iiUC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gdrive btn-sm">
+                    GDrive &nearr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 16. Video Praktik Terbimbing -->
+          <article class="doc-card" data-category="video" data-type="video">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-video">MP4</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Video Pembelajaran • Topik 3</span>
+                  <h4 class="doc-title">Video Praktik Terbimbing</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Perekaman praktik mengajar terbimbing bersama Guru Pamong SD Laboratorium UM mencakup apersepsi, inti gerak, dan penutup.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Video</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" onclick="openVideoModal('Video Praktik Terbimbing', '', 'Video pengajaran terbimbing di SD Laboratorium UM.')">
+                  Putar Video
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 17. Foto Orientasi Awal -->
+          <article class="doc-card" data-category="foto" data-type="foto">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-img">FOTO</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Foto Kegiatan • Topik 1</span>
+                  <h4 class="doc-title">Foto Orientasi Awal Mahasiswa</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Penerimaan resmi mahasiswa PPL Mandiri oleh Kepala Sekolah dan koordinator pamong di SD Laboratorium UM.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Foto</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-outline-navy btn-sm" onclick="openDocModal('Foto Orientasi Awal Mahasiswa', 'Foto Kegiatan', 'assets/images/kegiatan_orientasi.jpg', false, 'Dokumentasi foto penerimaan PPL di SD Laboratorium UM.')">
+                  Lihat Rincian
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. Foto Fasilitas Lapangan & Lingkungan -->
+          <article class="doc-card" data-category="foto" data-type="foto">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-img">FOTO</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Foto Kegiatan • Topik 2</span>
+                  <h4 class="doc-title">Foto Lapangan & Arena Olahraga</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Area lapangan olahraga, peralatan penjas, aula serbaguna, dan tata letak keselamatan fisik siswa SD Laboratorium UM.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Foto</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-outline-navy btn-sm" onclick="openDocModal('Foto Lapangan & Arena Olahraga', 'Foto Kegiatan', 'assets/images/sarpras_lapangan.jpg', false, 'Dokumentasi fasilitas dan sarana olahraga sekolah.')">
+                  Lihat Rincian
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 19. Foto Ekstrakurikuler -->
+          <article class="doc-card" data-category="non-mengajar" data-type="foto">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-img">FOTO</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Non-Mengajar • Topik 8</span>
+                  <h4 class="doc-title">Pendampingan Ekstrakurikuler</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Membantu pembinaan kegiatan ekstrakurikuler cabang olahraga peserta didik di luar jam wajib pelajaran.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Foto</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-outline-navy btn-sm" onclick="openDocModal('Pendampingan Ekstrakurikuler Siswa', 'Kegiatan Non-Mengajar', 'assets/images/ekstrakurikuler_olahraga.jpg', false, 'Dokumentasi ekstrakurikuler olahraga.')">
+                  Lihat Rincian
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Foto Sambut Pagi 5S -->
+          <article class="doc-card" data-category="non-mengajar" data-type="foto">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box doc-icon-img">FOTO</div>
+                <div class="doc-card-info">
+                  <span class="doc-category-badge">Non-Mengajar • Topik 8</span>
+                  <h4 class="doc-title">Piket & Sambut Pagi 5S</h4>
+                </div>
+              </div>
+              <p class="doc-description">
+                Pembiasaan budaya sekolah menyambut kedatangan anak-anak di pintu gerbang utama SD Laboratorium UM.
+              </p>
+            </div>
+            <div>
+              <div class="doc-meta-row">
+                <span>Kategori: <strong>Foto</strong></span>
+                <span class="badge badge-status-empty">Dokumen belum ditambahkan</span>
+              </div>
+              <div class="doc-actions-row">
+                <button type="button" class="btn btn-outline-navy btn-sm" onclick="openDocModal('Piket & Sambut Pagi 5S', 'Kegiatan Non-Mengajar', 'assets/images/sambut_pagi_siswa.jpg', false, 'Dokumentasi piket penyambutan siswa 5S.')">
+                  Lihat Rincian
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div id="docFilterEmpty" class="empty-state" style="display: none; margin-top: 2rem;">
+          <div class="empty-state-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h4 class="empty-state-title">Media tidak ditemukan</h4>
+          <p class="empty-state-desc">Tidak ada dokumentasi yang sesuai dengan kata kunci atau kategori yang Anda pilih.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>E-PORTOFOLIO PPL MANDIRI DI SD LABORATORIUM UM</h4>
+          <p class="footer-tagline">“Growing Through Practice, Teaching with Purpose.”</p>
+          <p class="footer-desc">
+            Portofolio digital resmi mahasiswa Program Pendidikan Profesi Guru (PPG) Universitas Negeri Malang dalam pelaksanaan Praktik Pengalaman Lapangan (PPL) Mandiri di SD Laboratorium UM.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Identitas Pemilik</h5>
+          <ul class="footer-links">
+            <li><strong>Nama:</strong> Achmad Miftachul Firdaus</li>
+            <li><strong>NIM:</strong> 25316173727</li>
+            <li><strong>LPTK:</strong> Universitas Negeri Malang</li>
+            <li><strong>Sekolah Praktik:</strong> SD Laboratorium UM</li>
+            <li><strong>Program:</strong> PPG Calon Guru</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigasi Utama</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Calon Guru</a></li>
+            <li><a href="refleksi.html">Refleksi Pembelajaran</a></li>
+            <li><a href="galeri.html">Galeri Dokumentasi</a></li>
+            <li><a href="topik-1.html">Topik 1 — Manajemen Sekolah</a></li>
+            <li><a href="topik-7.html">Topik 7 — Praktik Mandiri Siklus 4</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 E-Portofolio PPL Mandiri SD Laboratorium UM. Seluruh Hak Cipta Dilindungi.</div>
+        <div>Achmad Miftachul Firdaus • NIM 25316173727</div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="backToTopBtn" class="back-to-top" aria-label="Kembali ke atas">
+    <svg style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/gdrive-viewer.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/filter-search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
